@@ -78,10 +78,10 @@ class Bridge extends React.Component {
             <a href = "mailto:tech-review@postech.ac.kr">
               <FaEnvelope size = "20px"/>
             </a>
-            <a href = "https://instagram.com/postech.techreview">
+            <a href = "https://instagram.com/postech_techreview">
               <FaInstagram size="20px"/>
             </a>
-            <a href = "https://facebook.com/postech-techreview">
+            <a href = "https://facebook.com/postech.techreview">
               <FaFacebook size="20px"/>
             </a>
           </span>
