@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/techreview_web/static/css/main.652532cc.chunk.css",
+    "main.css": "/techreview_web/static/css/main.ef9c5dd5.chunk.css",
     "main.js": "/techreview_web/static/js/main.e2124bcb.chunk.js",
     "main.js.map": "/techreview_web/static/js/main.e2124bcb.chunk.js.map",
     "runtime-main.js": "/techreview_web/static/js/runtime-main.33098652.js",
@@ -10,13 +10,13 @@
     "static/js/3.0e2d22e9.chunk.js": "/techreview_web/static/js/3.0e2d22e9.chunk.js",
     "static/js/3.0e2d22e9.chunk.js.map": "/techreview_web/static/js/3.0e2d22e9.chunk.js.map",
     "index.html": "/techreview_web/index.html",
-    "static/css/main.652532cc.chunk.css.map": "/techreview_web/static/css/main.652532cc.chunk.css.map",
+    "static/css/main.ef9c5dd5.chunk.css.map": "/techreview_web/static/css/main.ef9c5dd5.chunk.css.map",
     "static/js/2.a895173d.chunk.js.LICENSE.txt": "/techreview_web/static/js/2.a895173d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.33098652.js",
     "static/js/2.a895173d.chunk.js",
-    "static/css/main.652532cc.chunk.css",
+    "static/css/main.ef9c5dd5.chunk.css",
     "static/js/main.e2124bcb.chunk.js"
   ]
 }
