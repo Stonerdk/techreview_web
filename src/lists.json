@@ -1,0 +1,30 @@
+[
+    {
+        "href" : "https://google.com",
+        "name" : "Brain Computer Interface",
+        "mentor" : "표중현",
+        "course" : "생명과학과 통합과정",
+        "date" : "2021/4/29"
+    },
+    {
+        "href" : "https://google.com",
+        "name" : "생체모방: 로봇의 디자인과 R&D 그리고 운용",
+        "mentor" : "김태식",
+        "course" : "IT융합공학과 통합과정",
+        "date" : "2021/5/13"
+    },
+    {
+        "href" : "https://google.com",
+        "name" : "기계학습과 무선 통신",
+        "mentor" : "김지오",
+        "course" : "컴퓨터공학과 통합과정",
+        "date" : "2021/5/2"
+    },
+    {
+        "href" : "https://google.com",
+        "name" : "화학전공자들의 기술 창업",
+        "mentor" : "김동영",
+        "course" : "박사 후 연구원",
+        "date" : "2021/6/17"
+    }
+]

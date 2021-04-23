@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.app {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #111111
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav {
+  background-color:darkslateblue;
+  padding:14px;
   color: white;
+  height: 28px;
+  align-items:center;
 }
 
-.App-link {
-  color: #61dafb;
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-left: 12px;
+  margin-right: 12px;
+  transition: color 1s
+}
+nav a:hover {
+  color: yellow
+}
+nav .title {
+  float: left;
+}
+nav .menus {
+  font-size: 14px;
+  font-weight:300;
+  float: right;
+  vertical-align:middle;
+  text-align:center;
+}
+main {
+  margin : auto;
+  max-width: 800px;
+}
+.seminarhead {
+  margin-top : 12px;
+  padding : 4px;
+  font-weight: 600;
+  padding-bottom: 6px;
+  color:#333333;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items:center;
+  border-bottom: #333333;
+  border-bottom-style:solid
+}
+.seminar {
+  margin-top : 6px;
+  margin-bottom : 6px;
+  padding : 4px;
+  color:#333333;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items:center;
+}
+.seminar a{
+  text-decoration: none;
+  color:white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.seminar .date {
+
+  font-size: 15px
+}
+.seminar .topic {
+  font-size: 20px;
+  font-weight: 500
+}
+
+.seminar .mentorwrapper {
+  font-size: 14px
+}
+
+.seminar .mentor {
+  font-weight:500
+}
+
+.seminar .course {
+  font-weight : 300
+}
+
+.seminar .apply {
+  background-color:darkslateblue;
+  text-align:center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+  transition: background-color 1s
+}
+.seminar .play {
+  background-color:crimson
+}
+.seminar .apply:hover {
+  background-color: purple
 }
