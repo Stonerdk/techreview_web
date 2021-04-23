@@ -33,6 +33,7 @@ nav .menus {
 }
 main {
   margin : auto;
+  padding : 6px;
   max-width: 800px;
 }
 .seminarhead {
