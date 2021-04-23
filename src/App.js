@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import {FaInstagram, FaFacebook, FaEnvelope, FaBookOpen} from 'react-icons/fa'
+import {Helmet} from 'react-helmet'
 class App extends React.Component {
   render() {
     return (<Bridge />);
@@ -65,6 +66,11 @@ class Bridge extends React.Component {
   render() {
     return (
       <div className = "app">
+        <Helmet>
+          <title>
+            POSTECH TechReview
+          </title>
+        </Helmet>
         <nav>
           <span className = "title">
             <a href = "/">
