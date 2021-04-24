@@ -123,7 +123,7 @@ class Bridge extends React.Component {
         </Helmet>
         <nav>
           <span className = "title">
-            <a href = "/">
+            <a href = "/techreview_web/">
               Tech-Review
             </a>
           </span>
