@@ -10,7 +10,7 @@ class App extends React.Component {
 
 const seminarList = [
   {
-    href : "https://google.com",
+    href : "https://forms.gle/X3hCnFHXGjkywuKw9",
     topic : "Brain Machine Interface",
     mentor : "표중현",
     course : "생명과학과 통합과정",
@@ -20,7 +20,7 @@ const seminarList = [
     img: "1.jpg"
   },
   {
-    href : "https://google.com",
+    href : "https://forms.gle/HJixdhQacv1CDQEx7",
     topic : "기계학습과 무선 통신",
     mentor : "김지오",
     course : "컴퓨터공학과 통합과정",
@@ -30,7 +30,7 @@ const seminarList = [
     img: "1.jpg"
   },
   {
-    href : "https://google.com",
+    href : "https://forms.gle/ztVkoWNmvqwYUHm17",
     topic : "생체모방: 로봇의 디자인과 R&D 그리고 운용",
     mentor : "김태식",
     course : "IT융합공학과 통합과정",
@@ -40,7 +40,7 @@ const seminarList = [
     img: "1.jpg"
   },
   {
-    href : "https://google.com",
+    href : "https://forms.gle/QyNR6JP92FBTivuFA",
     topic : "화학전공자들의 기술 창업",
     mentor : "김동영",
     course : "박사 후 연구원",
