@@ -8,51 +8,101 @@ class App extends React.Component {
   }
 }
 
+const seminarList = [
+  {
+    href : "https://google.com",
+    topic : "Brain Machine Interface",
+    mentor : "표중현",
+    course : "생명과학과 통합과정",
+    month: 4,
+    day: 29,
+    time: new Date(2021, 4 - 1, 29, 19, 30, 0, 0).getTime(),
+    img: "1.jpg"
+  },
+  {
+    href : "https://google.com",
+    topic : "기계학습과 무선 통신",
+    mentor : "김지오",
+    course : "컴퓨터공학과 통합과정",
+    month: 5,
+    day: 2,
+    time: new Date(2021, 5 - 1, 2, 19, 30, 0, 0).getTime(),
+    img: "1.jpg"
+  },
+  {
+    href : "https://google.com",
+    topic : "생체모방: 로봇의 디자인과 R&D 그리고 운용",
+    mentor : "김태식",
+    course : "IT융합공학과 통합과정",
+    month: 5,
+    day: 13,
+    time: new Date(2021, 5 - 1, 13, 19, 30, 0, 0).getTime(),
+    img: "1.jpg"
+  },
+  {
+    href : "https://google.com",
+    topic : "화학전공자들의 기술 창업",
+    mentor : "김동영",
+    course : "박사 후 연구원",
+    month: 6,
+    day: 17,
+    time: new Date(2021, 6 - 1, 17, 19, 30, 0, 0).getTime(),
+    img: "1.jpg" 
+  }
+]
+const today = new Date().getTime();
+
 class Bridge extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      timedelta : new Date().getTime(),
-      seminarList : [
-        {
-          href : "https://google.com",
-          topic : "Brain Computer Interface",
-          mentor : "표중현",
-          course : "생명과학과 통합과정",
-          month: 4,
-          day: 29
-        },
-        {
-          href : "https://google.com",
-          topic : "기계학습과 무선 통신",
-          mentor : "김지오",
-          course : "컴퓨터공학과 통합과정",
-          month: 5,
-          day: 2
-        },
-        {
-          href : "https://google.com",
-          topic : "생체모방: 로봇의 디자인과 R&D 그리고 운용",
-          mentor : "김태식",
-          course : "IT융합공학과 통합과정",
-          month: 5,
-          day: 13
-        },
-        {
-          href : "https://google.com",
-          topic : "화학전공자들의 기술 창업",
-          mentor : "김동영",
-          course : "박사 후 연구원",
-          month: 6,
-          day: 17
-        }
-      ]
+    this.state = {}
+  }
+  thisweekSeminar() {
+    let recent = seminarList[3];
+    for (var s of seminarList) {
+      if (today < s.time)
+        recent = s;
+        break;
     }
-    console.log(this.state.seminarList)
+    return (
+      <div className = "recent">
+        
+        <div className = "txtbg">
+          <div className = "txt">
+            <div className = "thisweek">
+              금주의 세미나
+            </div>
+            <div className = "topic">
+              {s.topic}
+            </div>
+            <div className = "mctgrid">
+              <span>
+                <div>
+                  <span className = "mentor">{s.mentor}</span>
+                  <span className = "course">&nbsp;{s.course}</span>
+                </div>
+                <div className = "time">
+                  {s.month}월 {s.day}일 목요일 19시 30분
+                </div>
+              </span>    
+              <span className = "btnWrapper">
+                {this.isTimeRange(s)}
+              </span>
+            </div>
+            
+          </div>
+        </div>
+        <div className = "bg">
+          <img src = {process.env.PUBLIC_URL + "/t1.jpg"} alt="d"/>
+          <img className = "blur" src = {process.env.PUBLIC_URL + "/t1.jpg"} alt="d"/>
+        </div>
+      </div>
+    )
+
   }
   isTimeRange(seminar) {
     //let dt = new Date().getTime() - new Date(2020, month, day, 19, 30, 0, 0).getTime()
-    let dt = new Date().getTime() - new Date(2021, seminar.month, seminar.day, 2, 30, 0, 0).getTime()
+    let dt = today - seminar.time
     if (dt >= 5400000)
       return null;
     else return (dt > -300000 && dt < 5400000) ? 
@@ -94,9 +144,7 @@ class Bridge extends React.Component {
           
         </nav>
         <main>
-          <h1>
-            Upcoming Seminars
-          </h1>
+          {this.thisweekSeminar()}
           <div className = "seminarhead">
             <div>
               날짜
@@ -105,10 +153,10 @@ class Bridge extends React.Component {
               주제
             </div>
           </div>
-          {this.state.seminarList.map(seminar => { return (
+          {seminarList.map(seminar => { return (
             <div className = "seminar">
               <div className = "date">
-                {seminar.month}월 {seminar.day}일 (목)<br/>19시 30분
+                {seminar.month}. {seminar.day} (목)<br/>19시 30분
               </div>
               <span>
                 <div className = "topic">

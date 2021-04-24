@@ -10,10 +10,11 @@ nav {
   height: 28px;
   align-items:center;
 }
-
-nav a {
+a{
   text-decoration: none;
-  color: white;
+  color:white;
+}
+nav a {
   margin-left: 12px;
   margin-right: 12px;
   transition: color 1s
@@ -36,6 +37,67 @@ main {
   padding : 6px;
   max-width: 800px;
 }
+
+.recent {
+  position: relative;
+}
+.recent .bg {
+  height: 500px;
+  width: 100%;
+  background-color: darkgreen;
+  z-index: 10;
+}
+.recent .txtbg {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 1;
+}
+
+.recent .txt {
+  padding : 8px;
+}
+.recent .thisweek {
+  font-size: 20px;
+  font-weight: 200;
+}
+.recent .topic {
+  font-size: 36px;
+  font-weight: 500;
+}
+.recent .mentor {
+  font-size: 16px;
+  font-weight: 500;
+}
+.recent .course {
+  font-size: 16px;
+  font-weight: 200;
+}
+.recent .time {
+  font-size: 16px;
+  font-weight: 200;
+}
+.recent .mctgrid {
+  display: flex;
+  align-items:center;
+}
+.recent .btnWrapper {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 100px;
+}
+.recent img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.recent .blur {
+  filter: blur(8px)
+}
 .seminarhead {
   margin-top : 12px;
   padding : 4px;
@@ -57,13 +119,10 @@ main {
   grid-template-columns: 1fr 3fr 1fr;
   align-items:center;
 }
-.seminar a{
-  text-decoration: none;
-  color:white;
-}
+
 
 .seminar .date {
-
+  font-weight: 400;
   font-size: 15px
 }
 .seminar .topic {
@@ -80,20 +139,22 @@ main {
 }
 
 .seminar .course {
-  font-weight : 300
+  font-weight : 400
 }
 
-.seminar .apply {
+.apply {
   background-color:darkslateblue;
   text-align:center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 6px 20px;
   border-radius: 4px;
-  transition: background-color 1s
+  box-shadow: 0px 8px 15px rgba(72, 61, 139, 0.2);
+  transition: all 0.3s ease 0s;
 }
-.seminar .play {
-  background-color:crimson
+.play {
+  background-color:crimson;
+  box-shadow: 0px 10px 15px rgba(220, 20, 60, 0.4)
 }
-.seminar .apply:hover {
-  background-color: purple
+.apply:hover {
+  background-color: purple;
+  box-shadow: 0px 10px 15px rgba(128, 0, 128, 0.4)
 }
