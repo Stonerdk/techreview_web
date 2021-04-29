@@ -20,16 +20,6 @@ const seminarList = [
     img: "1.jpg"
   },
   {
-    href : "https://forms.gle/HJixdhQacv1CDQEx7",
-    topic : "기계학습과 무선 통신",
-    mentor : "김지오",
-    course : "컴퓨터공학과 통합과정",
-    month: 5,
-    day: 2,
-    time: new Date(2021, 5 - 1, 2, 19, 30, 0, 0).getTime(),
-    img: "1.jpg"
-  },
-  {
     href : "https://forms.gle/ztVkoWNmvqwYUHm17",
     topic : "생체모방: 로봇의 디자인과 R&D 그리고 운용",
     mentor : "김태식",
@@ -37,6 +27,16 @@ const seminarList = [
     month: 5,
     day: 13,
     time: new Date(2021, 5 - 1, 13, 19, 30, 0, 0).getTime(),
+    img: "1.jpg"
+  },
+  {
+    href : "https://forms.gle/HJixdhQacv1CDQEx7",
+    topic : "기계학습과 무선 통신",
+    mentor : "김지오",
+    course : "컴퓨터공학과 통합과정",
+    month: 5,
+    day: 20,
+    time: new Date(2021, 5 - 1, 20, 19, 30, 0, 0).getTime(),
     img: "1.jpg"
   },
   {
