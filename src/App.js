@@ -17,7 +17,7 @@ const seminarList = [
     month: 4,
     day: 29,
     time: new Date(2021, 4 - 1, 29, 19, 30, 0, 0).getTime(),
-    img: "1.jpg"
+    img: "1.png"
   },
   {
     href : "https://forms.gle/ztVkoWNmvqwYUHm17",
@@ -27,7 +27,7 @@ const seminarList = [
     month: 5,
     day: 13,
     time: new Date(2021, 5 - 1, 13, 19, 30, 0, 0).getTime(),
-    img: "1.jpg"
+    img: "2.png"
   },
   {
     href : "https://forms.gle/HJixdhQacv1CDQEx7",
@@ -37,7 +37,7 @@ const seminarList = [
     month: 5,
     day: 20,
     time: new Date(2021, 5 - 1, 20, 19, 30, 0, 0).getTime(),
-    img: "1.jpg"
+    img: "3.png"
   },
   {
     href : "https://forms.gle/QyNR6JP92FBTivuFA",
@@ -47,7 +47,7 @@ const seminarList = [
     month: 6,
     day: 17,
     time: new Date(2021, 6 - 1, 17, 19, 30, 0, 0).getTime(),
-    img: "1.jpg" 
+    img: "4.png" 
   }
 ]
 const today = new Date().getTime();
@@ -60,9 +60,10 @@ class Bridge extends React.Component {
   thisweekSeminar() {
     let recent = seminarList[3];
     for (var s of seminarList) {
-      if (today < s.time)
+      if (today < s.time) {
         recent = s;
         break;
+      }
     }
     return (
       <div className = "recent">
@@ -93,8 +94,8 @@ class Bridge extends React.Component {
           </div>
         </div>
         <div className = "bg">
-          <img src = {process.env.PUBLIC_URL + "/t1.jpg"} alt="d"/>
-          <img className = "blur" src = {process.env.PUBLIC_URL + "/t1.jpg"} alt="d"/>
+          <img src = {process.env.PUBLIC_URL + "/" + s.img} alt="d"/>
+          <img className = "blur" src = {process.env.PUBLIC_URL + "/" + s.img} alt="d"/>
         </div>
       </div>
     )
