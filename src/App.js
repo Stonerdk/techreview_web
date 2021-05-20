@@ -30,7 +30,7 @@ const seminarList = [
     img: "2.png"
   },
   {
-    href : "https://forms.gle/HJixdhQacv1CDQEx7",
+    href : "https://forms.gle/MWgpLSAdDUa9pmFQ7",
     topic : "기계학습과 무선 통신",
     mentor : "김지오",
     course : "컴퓨터공학과 통합과정",
