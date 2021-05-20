@@ -67,7 +67,6 @@ class Bridge extends React.Component {
     }
     return (
       <div className = "recent">
-        
         <div className = "txtbg">
           <div className = "txt">
             <div className = "thisweek">
