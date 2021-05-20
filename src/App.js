@@ -40,7 +40,7 @@ const seminarList = [
     img: "3.png"
   },
   {
-    href : "https://forms.gle/QyNR6JP92FBTivuFA",
+    href : "https://forms.gle/9cjavTdLPkdZT5GC8",
     topic : "화학전공자들의 기술 창업",
     mentor : "김동영",
     course : "박사 후 연구원",
